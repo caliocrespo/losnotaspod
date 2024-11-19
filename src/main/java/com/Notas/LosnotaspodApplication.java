@@ -9,5 +9,6 @@ public class LosnotaspodApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(LosnotaspodApplication.class, args);
 	}
+	
 
 }
