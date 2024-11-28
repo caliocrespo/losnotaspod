@@ -4,16 +4,23 @@ import java.util.List;
 
 
 public class Episode {
+	private Long id;
 	private String title;
 	private int season;
 	private int episode;
-	private int description;
+	private String description;
 	private List<String> tags;
 	private String imageURL;
 	private String ytURL;
 	private List<Comment> comments;
 	
 	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	public String getTitle() {
 		return title;
 	}
@@ -23,7 +30,7 @@ public class Episode {
 	public int getEpisode() {
 		return episode;
 	}
-	public int getDescription() {
+	public String getDescription() {
 		return description;
 	}
 	public List<String> getTags() {
@@ -47,7 +54,7 @@ public class Episode {
 	public void setEpisode(int episode) {
 		this.episode = episode;
 	}
-	public void setDescription(int description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 	public void setTags(List<String> tags) {
